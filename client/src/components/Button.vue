@@ -1,6 +1,6 @@
 <!--suppress ALL -->
 <template>
-  <button>
+  <button class="button btn_home">
     {{ btn_msg }}
   </button>
 </template>
@@ -8,7 +8,7 @@
 <script>
   export default {
     name: 'Button',
-    props: ['btn_msg']
+    props: ['btn_msg', 'click']
   }
 </script>
 
@@ -20,7 +20,8 @@
   }
 
   .btn_home {
-    width: 150px;
+    min-width: 150px;
+    min-height: 30px;
   }
 
 </style>

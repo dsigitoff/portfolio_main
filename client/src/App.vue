@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <Preloader v-if="loading"></Preloader>
-      <router-view v-else="loading"></router-view>
+      <router-view v-else></router-view>
   </div>
 </template>
 
@@ -29,9 +29,14 @@
 <style lang="scss">
   @import "styles/main";
 
+  html {
+    font-size: 14px;
+  }
+
   body {
     margin: 0;
     padding: 0;
+    font-size: 14px;
     background: $dark;
     font-family: 'Open Sans', sans-serif;
     color: $white;
